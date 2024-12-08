@@ -21,5 +21,5 @@ export const getWakeUpSlots = () => {
     }
   );
 
-  return wakeUpSlots;
+  return wakeUpSlots.reverse();
 };
