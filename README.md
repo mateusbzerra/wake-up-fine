@@ -4,8 +4,10 @@
 <h1>WakeUp Fine</h1>
 A PWA application to select the best time to wake up, according to the human sleeping cycles, allowing you to wake up better and faster, reducing morning fatigue!
 
-Tech Stack
+## Tech Stack
 - React
 - Next.js
 - Tailwind CSS
 - Typescript
+
+Try it out here: https://wake-up-fine.vercel.app
