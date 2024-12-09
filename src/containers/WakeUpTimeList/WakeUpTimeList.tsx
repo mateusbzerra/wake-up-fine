@@ -5,6 +5,7 @@ import { formatTime } from "../../services/format-time/format-time";
 import { Button } from "@components/Button/Button";
 import { WakeUpCard } from "./components/WakeUpCard/WakeUpCard";
 import Image from "next/image";
+import { getEmojiUrl } from "./services/get-emoji-url";
 
 const isFirstTwoItems = (index: number) => index < 2;
 
@@ -28,6 +29,7 @@ export const WakeUpTimeList = () => {
             key={item.toLocaleTimeString()}
             time={formatTime(item, isHour12Format)}
             size={isFirstTwoItems(index) ? "large" : "small"}
+            imageUrl={getEmojiUrl({ position: index })}
           />
         ))}
       </div>
